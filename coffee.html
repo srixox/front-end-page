@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks landing page</title>
+    <link rel="stylesheet" href="coffee.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png"</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">what's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just a coffee<br>It's <span>Starbucks</span></h2>
+                <p>Coffee is the common man's gold, and like gold, it brings to every person the feeling of luxury and nobility</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgbox">
+                <img src="img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"</li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"</li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"</li>
+            <li><img src="thumb4.png" onclick="imgSlider('img4.png');changeCircleColor('#ac916a')"</li>
+            <li><img src=""</li>
+            
+
+        </ul>
+        
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background =color;
+        }
+    </script>
+    
+</body>
+</html>
